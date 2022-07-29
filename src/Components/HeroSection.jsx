@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import { useGlobalContext } from '../Context'
 import { Button } from '../styles/Button'
 
-const HeroSection = ({name, image}) => {
+const HeroSection = () => {
+  const {name, image} = useGlobalContext()
   return (
     <Wrapper>
         <div className="container grid grid-two-column">

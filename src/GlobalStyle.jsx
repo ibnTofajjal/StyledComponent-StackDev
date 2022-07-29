@@ -60,4 +60,10 @@ li {
 .grid-four-column{
    grid-template-columns: 1fr 1.2fr .5fr .8fr ;
 }
+.common-heading {
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+}
 `;

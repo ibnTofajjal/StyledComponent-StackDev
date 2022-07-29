@@ -1,4 +1,4 @@
-export const reducer = (state,action) => {
+ const reducer = (state,action) => {
     if(action.type === 'HOME_UPDATE') {
         return{
             ...state, 
@@ -15,4 +15,16 @@ export const reducer = (state,action) => {
            }
     }
 
+    if(action.type === 'GET_SERVICES') {
+        return{
+            ...state, 
+            services: action.payload,
+            
+           }
+    }
+
+    return state
+
 }
+
+export default reducer;
