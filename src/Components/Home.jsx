@@ -9,10 +9,7 @@ function Home() {
   useEffect(() => {
     updateHome()
   }, []);
-    // const data = {
-    //     name: 'Stack Developer',
-    //     image: './images/hero.svg'
-    // }
+
 
   return (
     <>
