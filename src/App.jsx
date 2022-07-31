@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Error from './Components/Error';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Components/Home';
@@ -44,6 +45,7 @@ const App = () => {
             <Route path='/about' element={<About/>} />
             <Route path='/service' element={<Services/>} />
             <Route path='/contact' element={<Contact/>} />
+            <Route path='*' element={<Error/>} />
           </Routes>
         <Footer/>
       </ThemeProvider>
